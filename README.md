@@ -28,7 +28,10 @@ A FullStack app, it lets the Admin assign to employees to review their co-employ
       localhost:5000
       ```
   6. Admin Code is `1234`
-      
+
+
+## Hosted link 
+http://3.111.150.118:5000/
   
   
 
