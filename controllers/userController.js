@@ -78,7 +78,7 @@ module.exports.createSession = async function(req,res){
     req.flash("success","Logged in Succesfully!");
 
     if (req.body.adminCode == 1234 &&  person.isAdmin){
-        // user.isAdmin = true;
+        user.isAdmin = true;
         return res.redirect('/');
     }
 
