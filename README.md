@@ -29,6 +29,50 @@ A FullStack app, it lets the Admin assign to employees to review their co-employ
       ```
   6. Admin Code is `1234`
 
+## Folder Structure
+   ```
+   Habit Tracker
+    |
+    |                  |--->css
+    |--->assets------->|--->img
+    |                  |---> js|-->home.js
+    |                          |-->noty.js
+    |
+    |                  |--->flash_middleware.js
+    |--->config------->|--->mongoose.js
+    |                  |--->passport-local-stargety.js
+    |
+    |                  |-->adminController.js
+    |                  |-->homeController.js
+    |--->controllers-->|-->reviewController.js
+    |                  |-->userController.js
+    |
+    |--->models------->|-->review.js
+    |                  |-->user.js
+    |
+    |              
+    |                  |-->admin.js
+    |--->routes------->|-->index.js
+    |                  |-->review.js
+    |                  |-->user.js
+    |
+    |
+    |              
+    |                  |--->_footer.ejs
+    |                  |--->_header.ejs
+    |                  |--->addEmployee.ejs
+    |                  |--->assignTask.ejs
+    |                  |--->employee_list.ejs
+    |--->views-------->|--->home.ejs
+    |                  |--->layout.ejs
+    |                  |--->user_sign_in.ejs
+    |                  |--->user_sign_up.ejs
+    |
+    |-->.gitignore
+    |--> index.js
+    |--> package-lock.json
+    |-->package.json
+   ```
 
 ## Hosted link 
 http://3.111.150.118:5000/
