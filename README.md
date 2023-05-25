@@ -74,8 +74,8 @@ A FullStack app, it lets the Admin assign to employees to review their co-employ
     |-->package.json
    ```
 
-## Hosted link 
-http://3.111.150.118:5000/
+## Live Demo
+[http://3.111.150.118:5000/](https://vast-teal-indri-boot.cyclic.app/)
   
   
 
