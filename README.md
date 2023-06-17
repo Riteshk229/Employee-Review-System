@@ -75,7 +75,7 @@ A FullStack app, it lets the Admin assign to employees to review their co-employ
    ```
 
 ## Live Demo
-[[http://3.111.150.118:5000/](https://vast-teal-indri-boot.cyclic.app/)](https://employee-review-system-by-ritesh.onrender.com)
+https://employee-review-system-by-ritesh.onrender.com
   
   
 
