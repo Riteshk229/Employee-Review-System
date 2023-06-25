@@ -9,27 +9,25 @@
         
         <div id="page-links">
 
-            <% if(locals.user) {%>
-                <% if(locals.user.isAdmin) {%>
+                <% if(locals.user) {%>
+                    <%if (locals.user.isAdmin) {%>
+                        <div>
+                            <a href="/admin/assignWork"> Assign Work </a>
+                        </div>
+                        <div>
+                            <a href="/admin/view-employees"> Employee List </a>
+                        </div>
+                        <div>
+                            <a href="/admin/addEmployee"> Register </a>
+                        </div>
+                    <%}%>
                     <div>
-                        <a href="/admin/assignWork"> Assign Work </a>
+                        <a href="/"> Welcome <%= user.name  %> </a>
                     </div>
                     <div>
-                        <a href="/admin/view-employees"> Employee List </a>
+                        <a href="/user/sign-out"> Sign Out</a>
                     </div>
-                    <div>
-                        <a href="/admin/addEmployee"> Register </a>
-                    </div>
-                <%}%>
-
-                <div>
-                    <a href="/admin/view-employees">Welcome <%= user.name  %> </a>
-                </div>
-                <div>
-                    <a href="/user/sign-out"> Sign Out</a>
-                </div>
-
-            <%} else {%>
+            <%}else {%>
                 <div>
                     <a href="/user/sign-up"> Sign Up</a>
                 </div>

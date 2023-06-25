@@ -12,7 +12,9 @@
           <th class = 'L-border' scope="col">Name</th>
           <th class = 'L-border' scope="col">Email</th>
           <th class = 'L-border'  scope="col">Admin</th>
-          <th class = 'L-border' scope="col">Delete</th>
+          <%if(locals.user.isAdmin){%>
+            <th class = 'L-border' scope="col">Delete</th>
+          <%}%>
         </tr>
       </thead>
       <tbody>
@@ -22,7 +24,7 @@
             <td class = 'L-border'> <%= employees[i].name%> </td>
             <td class = 'L-border'> <%= employees[i].email%> </td>
             <td class = 'L-border'> <%= employees[i].isAdmin%> </td>
-            <% if(locals.user.id != employees[i]._id) {%>
+            <% if((locals.user.id != employees[i]._id) && (locals.user.isAdmin)) {%>
               <td class = 'L-border'> 
                 <a href="/admin/deleteEmployee/<%=employees[i]._id %>" class="btn btn-md">Delete</a>
               </td>

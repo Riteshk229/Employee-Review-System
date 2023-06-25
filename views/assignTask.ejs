@@ -52,7 +52,7 @@
                         <select class="form-select form-select" aria-label="Default select example" name="selectedUser">
                             <option selected>Select Employee</option>
                             <% for(let i = 0; i < employee.length ; i++){ %>
-                                <% if(employee[i].id != user.id) {%>
+                                <% if((employee[i].id != user.id) && !employee[i].isAdmin) {%>
                                     <option value= <%= employee[i].id %> > <%= employee[i].name %> </option>
                                  <%}%>
                             <%}%>
